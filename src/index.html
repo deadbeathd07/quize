@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="contain containAutorisation">
+            <h1 class="logo">Hello!</h1>
+            <button class="button signIn">Sign in</button>
+            <button class="button logIn">Log in</button>
+        </div>
+
+        <form class="contain containLogIn displayNone" name="logIn">
+            <input type="text" name="firstName" id="firstNameLogIn" class="input inputName" placeholder="Name" required>
+            <input type="text" name="secondName" id="secondName" class="input inputName" placeholder="Surname" required>
+            <div class="containAge"><label for="age">Age</label><input type="number" name="age" id="age" class="input" min="14" max="150" required></div>
+            <div class="containGender">
+                <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+            </div>
+            <input type="password" name="password" id="passwordLogIn" class="input inputPassword" placeholder="Take password">
+            <button type="button" class="button completeLogIn">Log In</button>
+        </form>
+
+        <form class="contain containSignIn displayNone" name="signIn">
+            <input type="text" name="firstName" id="firstNameSignIn" class="input inputName" placeholder="Name" required>
+            <input type="password" name="password" id="passwordSignIn" class="input inputPassword" placeholder="Take password">
+            <button type="button" class="button completeSignIn">Sign In</button>
+        </form>
+
+        <button class="button startQuiz displayNone">Start Quiz</button>
+
+        <form name="quiz" class="contain containQuiz displayNone">
+            <div class="numbers"></div>
+            <div class="question"></div>
+            <div class="formOptions">
+                <div class="containOption"><input type="radio" name="options" id="option1" value="0" required><label for="option1"></label></div>
+                <div class="containOption"><input type="radio" name="options" id="option2" value="1"><label for="option2"></label></div>
+                <div class="containOption"><input type="radio" name="options" id="option3" value="2"><label for="option3"></label></div>
+                <div class="containOption"><input type="radio" name="options" id="option4" value="3"><label for="option4"></label></div>
+            </div>
+            <button class="button nextQuestion">Next</button>
+        </form>
+
+        <div class="contain containfinal displayNone">
+            <div class="congText">
+                Поздравляем с прохождением теста! Ваш счет:
+            </div>
+            <div class="score"></div>
+            <div class="buttonsContainer">
+                <button class="button quite">Выйти</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
